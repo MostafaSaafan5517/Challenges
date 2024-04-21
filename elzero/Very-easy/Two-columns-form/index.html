@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="form">
+        <form>
+          <div>
+            <label for="username">Username <span>&#42;</span></label
+            ><br />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Type Your Name in English Only"
+              required
+            /><br />
+            <label for="password">Password <span>&#42;</span></label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Type a Complex Password"
+              required
+            />
+            <br />
+            <label for="email">Email <span>&#42;</span></label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Type a Valid Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <br />
+            <input type="tel" name="tel" id="phone" />
+            <br />
+            <label for="textarea">Brief</label>
+            <br />
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="39"
+              rows="7"
+            ></textarea>
+          </div>
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

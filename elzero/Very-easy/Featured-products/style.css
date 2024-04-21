@@ -1,0 +1,83 @@
+.parent {
+  width: fit-content;
+  margin: 40px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent>div:first-child {
+  width: fit-content;
+  background-color: #336d7d;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  left: -415px;
+}
+
+hr {
+  margin: 5px 10px;
+  display: inline-block;
+  width: 50px;
+}
+
+.two hr {
+  width: 22px;
+}
+
+img {
+  width: 200px;
+  height: 220px;
+}
+
+
+.products {
+  width: 932px;
+  margin: 20px calc((100% - 932px) / 2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.products>div {
+  border: 5px solid #ddd;
+}
+
+img+div {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #616161;
+}
+
+img+div+div {
+  padding: 10px 0;
+  text-align: center;
+}
+
+del {
+  color: #616161;
+}
+
+span {
+  color: #346f7f;
+  font-weight: bold;
+}
+
+.two span {
+  color: #e64602;
+}
+
+.two {
+  position: relative;
+}
+
+.two::before {
+  content: "Sale\0021";
+  background-color: #e64602;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -12px;
+}

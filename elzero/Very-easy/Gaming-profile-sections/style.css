@@ -1,0 +1,135 @@
+body {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section,
+body>hr {
+  background-color: #fff;
+  margin: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+section>hr {
+  border: 1px solid #eeeeeea2;
+}
+
+section+hr {
+  border: 1px solid #ddd;
+}
+
+/* ================ Section One ================== */
+
+.one {
+  display: flex;
+}
+
+[alt="Eng/ Osama Elzero"] {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  margin: 0px 40px;
+}
+
+b {
+  position: relative;
+  left: 90px;
+}
+
+.range {
+  width: 200px;
+  height: 15px;
+  background-image: linear-gradient(to right, #009688 0%, #009688 80%, #eee 80%, #eee 100%);
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+
+small {
+  position: relative;
+  left: 30px;
+}
+
+.span-one {
+  color: #02776b;
+  font-weight: bold;
+}
+
+.one div:last-child {
+  margin: 0px 20px;
+  position: relative;
+}
+
+.one div:last-child p {
+  word-break: break-all;
+}
+
+.one div:last-child small {
+  position: absolute;
+  bottom: 20px;
+  left: calc(100% - 128px);
+}
+
+.one {
+  padding: 0;
+}
+
+.one div:first-child {
+  border-right: 1px solid #eee;
+  padding: 20px 0;
+}
+
+/* =============== Section Two =================== */
+
+.butt {
+  background-color: #607d8b;
+  color: #fff;
+  width: fit-content;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.span-two {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.two div:not(.butt) {
+  margin: 10px 0;
+
+}
+
+/* =============== Section Three =================== */
+
+[alt="Trophies"] {
+  width: 827px;
+}
+
+/* =============== Section Four =================== */
+
+/* =============== Section Five =================== */
+
+.five div:not(.butt) {
+  margin: 20px 0;
+}
+
+.five div:not(.butt):not(:nth-child(6)):not(:nth-child(10))::after {
+  content: "Yes";
+  color: #3d8600;
+  font-weight: bold;
+  position: absolute;
+  right: 50px;
+}
+
+.five div:nth-child(6)::after,
+.five div:nth-child(10)::after {
+  content: "No";
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 50px;
+}

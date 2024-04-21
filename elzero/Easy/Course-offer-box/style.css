@@ -1,0 +1,140 @@
+body {
+  font-family: Cairo, sans-serif;
+}
+
+.container {
+  background-color: #51509b;
+  padding: 20px 20px 80px;
+  ;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* the buy the course section */
+.buyTheCourse {
+  color: #fff;
+  margin: 30px 0 50px 80px;
+
+  & h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+
+    & img {
+      width: 50px;
+      height: 50px;
+      vertical-align: middle
+    }
+  }
+
+  & p {
+    /* font-size: 10px; */
+    margin: 0;
+  }
+}
+
+/* the offer section */
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* the cards of the offer section */
+.card {
+  background-color: #fff;
+  padding: 50px;
+  box-shadow: 0px 0px 10px 13px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+
+  & .content {
+    color: #585858;
+  }
+
+  & hr {
+    border-color: #fff;
+  }
+}
+
+.card h2 {
+  color: #363f4e;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 190px;
+    height: 5px;
+    background-color: rgb(229 174 64 / 40%);
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(229, 175, 64, 1);
+  }
+
+  & img {
+    vertical-align: sub;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.one {
+  width: 450px;
+  position: relative;
+  left: 30px;
+}
+
+.two {
+  width: 300px;
+}
+
+/* the price part */
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & button {
+    padding: 10px 15px;
+    background-color: #e5af40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  & button:not(.two button) {
+    margin-right: 50px;
+  }
+}
+
+.price p {
+  color: #363f4e;
+  margin: 0;
+
+  & span:first-of-type {
+    font-size: 25px;
+    position: relative;
+    top: -25px;
+  }
+
+  & span:last-of-type {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+
+.one>p {
+  color: #585858;
+  margin: 0;
+
+  & a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+}

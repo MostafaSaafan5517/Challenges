@@ -1,0 +1,29 @@
+.parent {
+  width: 99vw;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.half {
+  display: inline-block;
+  width: 400px;
+  height: 450px;
+}
+
+.first {
+  background-color: #fff;
+  border: 15px solid #343a40;
+}
+
+.second {
+  background-color: #343a40;
+  border-left: 15px solid #fff;
+  position: relative;
+  left: -15px;
+}
+
+img {
+  position: absolute;
+}

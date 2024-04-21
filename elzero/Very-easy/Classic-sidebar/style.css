@@ -1,0 +1,52 @@
+.parent {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  left: 75%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px -20px;
+}
+
+h3 {
+  position: relative;
+}
+
+h3::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  border: 1px solid #89aef2;
+  position: absolute;
+  transform: translate(50%, 0);
+  top: 50%;
+}
+
+.one div {
+  padding: 15px 0;
+  color: rgb(142, 140, 140);
+  font-weight: bold;
+  position: relative;
+}
+
+.one div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.one span {
+  color: #000;
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.three div {
+  padding: 15px 0;
+  color: rgb(142, 140, 140);
+  font-weight: bold;
+}
+
+i {
+  margin-right: 10px;
+}

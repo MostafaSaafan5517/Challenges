@@ -1,0 +1,21 @@
+button {
+  background-color: #029684;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p {
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+  width: 300px;
+  margin: 15px auto;
+  display: none;
+}

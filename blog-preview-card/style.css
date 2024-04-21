@@ -1,0 +1,130 @@
+/* General Styles */
+:root {
+  --main-duration: 0.5s;
+}
+
+/* Set the background color and size of the body */
+body {
+  background-color: hsl(47, 89%, 63%);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Figtree', sans-serif;
+  position: relative;
+  cursor: default;
+}
+
+/* Set the font size for paragraphs */
+p,
+h2 {
+  font-size: 16px;
+}
+
+/* Container Styles */
+
+/* Set the background color, position, and size of the container */
+.container {
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  transition: var(--main-duration);
+}
+
+.container:hover {
+  box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.container,
+.container>* {
+  pointer-events: none;
+}
+
+.text h1,
+.container button {
+  pointer-events: auto;
+}
+
+/* Add styles for child elements of the container */
+
+/* Styles for images inside the container */
+.container>img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Styles for buttons inside the container */
+.container>button {
+  background-color: hsl(47, 89%, 63%);
+  color: hsl(0, 0%, 0%);
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: 800;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* Styles for paragraphs inside the container */
+.container>p {
+  margin: 10px 0 0 0;
+}
+
+/* Text Styles */
+
+/* Styles for headings and paragraphs inside the text class */
+.text>h1 {
+  font-size: 20px;
+  transition: var(--main-duration);
+}
+
+/* Hover effect for headings */
+.text>h1:hover {
+  color: hsl(47, 89%, 63%);
+}
+
+/* Styles for paragraphs inside the text class */
+.text>p {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+/* Person Styles */
+
+/* Styles for the person class */
+.person {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+
+/* Styles for images inside the person class */
+.person>img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Attribution Styles */
+
+/* Styles for the attribution class */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Styles for links inside the attribution class */
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

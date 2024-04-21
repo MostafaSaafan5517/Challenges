@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 10px;
+}
+
+[class~="part"] {
+  width: 200px;
+}
+
+hr {
+  border: 1px solid;
+}
+
+.part div:first-child {
+  color: blue;
+}
+
+.part div:nth-child(2) {
+  color: red;
+}
+
+.part div:nth-child(3) {
+  color: green;
+}
+
+.part div:last-child {
+  color: #cd661a;
+}
+
+.part hr::after {
+  content: "";
+  width: 83px;
+  height: 1.25px;
+  background-color: #eee;
+  position: absolute;
+  left: 125px;
+  transform: translate(0, -60%);
+}
+
+.one hr::before {
+  content: "";
+  border: 5px solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+
+.two hr::before {
+  content: "";
+  border: 5px solid;
+  position: absolute;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+
+.three hr::before {
+  content: "";
+  border: 7px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  left: 27px;
+  transform: translate(0px, -95%);
+}
+
+.four hr::before {
+  content: "";
+  border: 7px solid;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  left: 27px;
+  transform: translate(0px, -5%);
+}

@@ -1,0 +1,26 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 98vw;
+  height: 100vh;
+}
+
+body div:not(:nth-of-type(5)) {
+  width: inherit;
+  height: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.scroll {
+  background-color: red;
+  padding: 10px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}

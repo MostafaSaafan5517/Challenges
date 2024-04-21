@@ -1,0 +1,227 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============== Header ============== */
+
+header {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+header div {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 100px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  margin: 0px 10px;
+}
+
+/* ============== Section One ===================== */
+
+.one {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  padding: 20px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  color: #03a9f4;
+}
+
+.one p {
+  margin: 0 53px;
+  text-align-last: center;
+}
+
+/* ============== Section Two ===================== */
+
+.two {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.two img {
+  width: 70px;
+  height: 70px;
+  margin: 0 130px;
+}
+
+.two img+div {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.two>div {
+  width: 330px;
+}
+
+.two img+div+div {
+  margin: 0 10px;
+  text-align-last: center;
+  color: #808080;
+}
+
+/* ============== Section Three ===================== */
+
+.three {
+  background-color: #f6f6f6;
+  justify-content: center;
+}
+
+.three>div {
+  width: 576px;
+}
+
+/* ============== Section Four ===================== */
+
+.four {
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.four div {
+  width: 300px;
+  height: 130px;
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+}
+
+.four span {
+  font-size: initial;
+  font-weight: initial;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, 0);
+}
+
+.four div:first-child {
+  background-color: #b33939;
+}
+
+.four div:nth-child(2) {
+  background-color: #227093;
+  margin: 0 10px;
+}
+
+.four div:last-child {
+  background-color: #218c74;
+}
+
+/* ============== Section Five ===================== */
+
+.five {
+  background-color: #f6f6f6;
+  padding: 20px 0;
+}
+
+.five h2 {
+  text-align: center;
+}
+
+.five div {
+  margin: 20px 0;
+  margin-right: 80%;
+  font-weight: bold;
+  direction: rtl;
+  position: relative;
+}
+
+.five div span {
+  position: absolute;
+  color: #fff;
+}
+
+.five div::before {
+  content: "";
+  width: 48em;
+  height: 30px;
+  position: absolute;
+  left: 113%;
+  top: -3px;
+}
+
+.five div:nth-of-type(1)::before {
+  background-image: linear-gradient(to right, #03a9f4 0%, #03a9f4 60%, #fff 60%, #fff 100%);
+}
+
+.five div:nth-of-type(1) span {
+  left: 271%;
+}
+
+.five div:nth-of-type(2)::before {
+  background-image: linear-gradient(to right, #03a9f4 0%, #03a9f4 70%, #fff 70%, #fff 100%);
+}
+
+.five div:nth-of-type(2) span {
+  left: 300%;
+}
+
+.five div:nth-of-type(3)::before {
+  background-image: linear-gradient(to right, #03a9f4 0%, #03a9f4 80%, #fff 80%, #fff 100%);
+}
+
+.five div:nth-of-type(3) span {
+  left: 328%;
+}
+
+.five div:nth-of-type(4)::before {
+  background-image: linear-gradient(to right, #03a9f4 0%, #03a9f4 65%, #fff 65%, #fff 100%);
+}
+
+.five div:nth-of-type(4) span {
+  left: 285%;
+}
+
+.five div:nth-of-type(5)::before {
+  background-image: linear-gradient(to right, #03a9f4 0%, #03a9f4 90%, #fff 90%, #fff 100%);
+}
+
+.five div:nth-of-type(5) span {
+  left: 356%;
+}
+
+/* ============== Footer ===================== */
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+  justify-content: space-around !important;
+  font-size: smaller;
+}
+
+body {
+  margin: 1px 0 0 0;
+}
+
+.author {
+  color: #2b9ccc;
+  font-weight: bold;
+}

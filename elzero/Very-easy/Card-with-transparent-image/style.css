@@ -1,0 +1,80 @@
+body {
+  width: 99vw;
+  height: 95vh;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+  background-color: #fff;
+  width: 360px;
+  height: 280px;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  z-index: -1;
+}
+
+.parent::before {
+  content: "A+";
+  background-color: #4580af;
+  color: #fff;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  border-radius: 10%;
+  z-index: inherit;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #3b74ba;
+  padding: 0 18px;
+  letter-spacing: -2px;
+}
+
+small {
+  margin: 10px;
+  color: #979daa;
+}
+
+.parent div:first-child {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+hr {
+  margin: 14px;
+}
+
+.parent div:not(:first-child) {
+  background-color: #f6f6f6;
+  margin: 10px;
+  padding: 10px;
+}
+
+.two::after {
+  content: "OsElzero";
+  margin-left: 184px;
+}
+
+.three::after {
+  content: "Osama_Elzero";
+  margin-left: 168px;
+}
+
+.four::after {
+  content: "OsamaElzero";
+  margin-left: 164px;
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translate(-50%, -50%);
+}

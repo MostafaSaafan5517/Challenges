@@ -1,0 +1,140 @@
+.parent {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* =========== Basic and Professional =========== */
+
+.basic,
+.professional {
+  margin: 100px 0;
+  position: relative;
+}
+
+.basic div {
+  margin-right: 15px;
+}
+
+.basic div:first-child {
+  background-color: #f44336;
+  color: #fff;
+  padding: 20px;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.professional div:first-child {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 20px;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.basic div:not(:first-child),
+.professional div:not(:first-child) {
+  background-color: #fff;
+  padding: 20px 50px;
+}
+
+.basic div:not(:first-child):not(:last-child),
+.professional div:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid #dddddd3a;
+}
+
+.basic div,
+.professional div {
+  position: relative;
+}
+
+/* ============= True ====================== */
+
+.basic [class="true"]::before,
+.professional div:not(:first-child)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #009688;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+
+.basic [class="true"]::after,
+.professional div:not(:first-child)::after {
+  content: "";
+  width: 9px;
+  height: 4px;
+  border-left: 3px solid #FFf;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-40deg);
+  position: absolute;
+  left: 22px;
+  bottom: 26px;
+}
+
+/* ================= False ================= */
+
+.basic div:not(:first-child):not(.true)::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e91e63;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+
+.basic div:not(:first-child):not(.true)::after {
+  content: "+";
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 21px;
+  bottom: 15px;
+}
+
+/* ============ Question Mark =============== */
+
+span.one {
+  padding: 3.5px 8.5px;
+  border-radius: 50%;
+  background-color: #7e7e7e;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+}
+
+/* ================ Save ================ */
+
+span.two {
+  position: absolute;
+  right: 40px;
+  top: -45px;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+
+span.two::after {
+  content: "";
+  border: 19px solid;
+  border-color: #2196f3 #eee #2196f3 #2196f3;
+  position: absolute;
+  left: 107px;
+  bottom: 0;
+}
